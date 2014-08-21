@@ -143,7 +143,7 @@ namespace Sitecore.SharedSource.GeoLiteResolver.MaxMind
                 dboptions = options;
                 init();
             } catch(System.SystemException) {
-                Console.Write("cannot open file " + databaseFile + "\n");
+                 throw new Exception("cannot open file " + databaseFile);
             }
         }
 
